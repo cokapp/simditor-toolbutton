@@ -5,9 +5,6 @@ class ToolButton extends SimpleModule
   opts:
     toolButton: false
 
-  _tpl:
-    button: '<a href="javascript:;" class="toolbar-item toolbar-button"></a>'
-
   _init: () ->
     @editor = @_module
     return unless @opts.toolButton
@@ -17,22 +14,19 @@ class ToolButton extends SimpleModule
     ###
       {
           name: 'paste',
-          title: '粘贴',
-          tpl: '<b>粘贴</b>',
+          title: 'button',
+          tpl: '<b>BUTTON</b>',
           onClick: function(){}
       }    
     ###
-    for btn in @opts.toolButton
-      @el = $(@_tpl.button)
-      @el.attr('title', btn.title)
-      .addClass("toolbar-button-" + btn.name)
-      .data('button', @)
+    
+    for btn in @opts.toolButton    
+      tpl = "<li class='toolbar-button toolbar-button-#{btn.name}'><a href='javascript:;' class='toolbar-item' title='#{btn.title}'>#{btn.tpl}</a></li>"
+      @el = $(tpl)
+      @el.appendTo(@wrapper)
 
       if btn.onClick
         @el.on 'click', (e) => 
           btn.onClick.call(@, @editor, e)
-
-      $(btn.tpl).appendTo(@el)
-      @el.appendTo(@wrapper)
 
 Simditor.connect ToolButton

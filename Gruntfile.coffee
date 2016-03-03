@@ -20,8 +20,8 @@ module.exports = (grunt) ->
         src: 'lib/simditor-toolbutton.js'
         template: 'umd'
         amdModuleId: 'simditor-toolbutton'
-        objectToExport: 'SimditorToolButton'
-        globalAlias: 'SimditorToolButton'
+        objectToExport: 'ToolButton'
+        globalAlias: 'ToolButton'
         deps:
           'default': ['$', 'SimpleModule','Simditor']
           amd: ['jquery', 'simple-module', 'simditor']
