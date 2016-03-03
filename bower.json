@@ -1,0 +1,26 @@
+{
+  "name": "simditor-toolbutton",
+  "version": "1.0.0",
+  "authors": [
+    "charlie<charlie@cokapp.com>"
+  ],
+  "description": "a ToolButton plugin for Simditor",
+  "main": "lib/simditor-toolbutton.js",
+  "keywords": [
+    "simditor",
+    "toolbutton"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cokapp/simditor-toolbutton",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor",
+    "Gruntfile.coffee",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "simditor": "2.3.x"
+  }
+}

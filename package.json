@@ -1,0 +1,24 @@
+{
+  "name": "simditor-toolbutton",
+  "description": "A toolbutton plugin for Simditor",
+  "version": "1.1.1",
+  "homepage": "https://github.com/cokapp/simditor-toolbutton",
+  "author": {
+    "name": "charlie",
+    "email": "charlie@cokapp.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cokapp/simditor-toolbutton.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cokapp/simditor-toolbutton/issues"
+  },
+  "devDependencies": {
+    "grunt": "0.x",
+    "grunt-contrib-watch": "0.x",
+    "grunt-contrib-coffee": "0.x",
+    "grunt-umd": "2.x"
+  }
+}
